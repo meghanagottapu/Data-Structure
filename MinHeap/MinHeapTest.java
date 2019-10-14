@@ -1,5 +1,5 @@
 import java.util.Random;
-public class MaxHeapTest {
+public class MinHeapTest {
 	public static void main(String[] args) {
 		Random r = new Random();
 		int[] keys = new int[10];
@@ -7,7 +7,7 @@ public class MaxHeapTest {
 			keys[i] = r.nextInt(100);
 		}
 		int[] keys = {5,3,8,6,2,1,7,9,4,0};
-		MaxHeap m = new MaxHeap(keys);
+		MinHeap m = new MinHeap(keys);
 		m.print();
 		System.out.println(m.parent(2));
 		System.out.println(m.get(m.parent(2)));
